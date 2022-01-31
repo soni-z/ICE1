@@ -56,6 +56,7 @@ public class Card {
         String output = "The Lucky Card is" + this.value + " of " + Card.SUITS[1];
 
         return output;
+        
     }
 
     public String toString() {//overriding the toString() method  
