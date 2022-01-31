@@ -39,7 +39,7 @@ public class CardTrick {
                 int numbers = sc.nextInt();
                 System.out.println(" The suit is " + c.getSuit() + " and card number is " + c.getValue() + "\n");
             }
-            System.out.println(c1.getLuckyCard());
+           System.out.println(c1.getLuckyCard());
     }
     
 }
