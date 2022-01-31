@@ -48,12 +48,6 @@ public class Card {
     public void setValue(int value) {
         this.value = value;
     }
-   public String getLuckyCard(){
-      this.value=7;
-      String output= "The Lucky Card is"+ this.value+ " of "+ Card.SUITS[3];
-      
-      return output;
-   }
 
    
     
