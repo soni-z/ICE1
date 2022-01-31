@@ -19,7 +19,7 @@ public class CardTrick {
     
     public static void main(String[] args)
     {
-        Scanner sc=new Scanner(System.in);
+         Scanner sc=new Scanner(System.in);
         Card[] magicHand = new Card[7];
          Random crd = new Random();
         Card c1=new Card();
@@ -31,15 +31,21 @@ public class CardTrick {
                 int value = crd.nextInt(13 - 1) + 1;
                 int crdSuit = crd.nextInt(4);
 
-                c.setValue(2);//random generation for number/use method
+                c.setValue(value);//random generation for number/use method
 //          c.setSuit("suit by random suit generation"+Card.SUITS[crdSuit]);
                 magicHand[i] = c; // stores the card object  in array
                 c.setSuit(Card.SUITS[crdSuit]);
-                System.out.println("Guess a card number");
-                int numbers = sc.nextInt();
-                System.out.println(" The suit is " + c.getSuit() + " and card number is " + c.getValue() + "\n");
+                System.out.println("Random cards generated are : "+c.toString());
+                System.out.println("");
+               
+//                System.out.println(" The suit is " + c.getSuit() + " and card number is " + c.getValue() + "\n");
             }
+             System.out.println("Enter card number");
+        int value = sc.nextInt();
+                System.out.println("Enter the suit");
+            String  suit = sc.nextLine();   
+   
            System.out.println(c1.getLuckyCard());
-    }
     
+}
 }
