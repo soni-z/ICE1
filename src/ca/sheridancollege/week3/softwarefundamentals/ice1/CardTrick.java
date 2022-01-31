@@ -22,6 +22,7 @@ public class CardTrick {
         Scanner sc=new Scanner(System.in);
         Card[] magicHand = new Card[7];
          Random crd = new Random();
+        Card c1=new Card();
 //            Card game = new Card();
             for (int i = 0; i < magicHand.length; i++) {
 
@@ -38,6 +39,7 @@ public class CardTrick {
                 int numbers = sc.nextInt();
                 System.out.println(" The suit is " + c.getSuit() + " and card number is " + c.getValue() + "\n");
             }
+            System.out.println(c1.getLuckyCard());
     }
     
 }
