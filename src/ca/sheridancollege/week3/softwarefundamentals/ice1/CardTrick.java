@@ -55,6 +55,7 @@ public class CardTrick {
             System.out.println("your card not activated");
         }
         System.out.println(c1.getLuckyCard());
+        
     }
 
 }
